@@ -1,0 +1,51 @@
+@mixin importFont($font, $weight, $path) {
+  @font-face {
+    font-family: $font;
+    font-weight: $weight;
+    src: url($path);
+  }
+}
+$fontBase: 'comfortaa';
+$fontBasePath: '../fonts/';
+$fontHeading: 'comfortaa';
+
+//++++++++++++++++++++++++++++++++++ | regular | ++++++++++++++++++++++++++++++++++
+@include importFont($fontBase, 300, $fontBasePath + 'Comfortaa-Regular.ttf')
+
+//++++++++++++++++++++++++++++++++++ | medium | ++++++++++++++++++++++++++++++++++
+@include importFont($fontBase, 500, $fontBasePath + 'Comfortaa-Medium.ttf')
+
+//header font
+//++++++++++++++++++++++++++++++++++ |  semebold | ++++++++++++++++++++++++++++++++++
+@include importFont($fontHeading, 700, $fontBasePath + 'Comfortaa-SemiBold.ttf');
+//header font
+//
+
+//header font
+//++++++++++++++++++++++++++++++++++ |  bold | ++++++++++++++++++++++++++++++++++
+@include importFont($fontHeading, 900, $fontBasePath + 'Comfortaa-Bold.ttf');
+//header font
+//
+
+
+$fontBase: 'comfortaa';
+$fontBasePath: '../fonts/';
+$fontHeading: 'museoSans';
+
+//++++++++++++++++++++++++++++++++++ | regular | ++++++++++++++++++++++++++++++++++
+@include importFont($fontBase, 300, $fontBasePath + 'MuseSansCyrlRegular.otf')
+
+//++++++++++++++++++++++++++++++++++ | medume | ++++++++++++++++++++++++++++++++++
+@include importFont($fontBase, 500, $fontBasePath + 'MuseSansCyrlMedium.otf')
+
+//header font
+//++++++++++++++++++++++++++++++++++ |  semebold | ++++++++++++++++++++++++++++++++++
+@include importFont($fontHeading, 700, $fontBasePath + 'MuseSansCyrlSsemeBold.otf');
+//header font
+//
+
+//header font
+//++++++++++++++++++++++++++++++++++ |  bold | ++++++++++++++++++++++++++++++++++
+@include importFont($fontHeading, 900, $fontBasePath + 'MuseSansCyrlBold.otf');
+//header font
+//
