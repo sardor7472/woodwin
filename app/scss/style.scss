@@ -291,8 +291,7 @@ nav {
       }
     }
   }
-
-  &-desc {
+  &-desc{
     cursor: pointer;
     display: none;
     transition: 1s;
@@ -354,12 +353,12 @@ nav {
 
 /* main preimushchestva */
 
-.preimushchestva {
+.preimushchestva{
 
   padding-top: 60px;
   padding-bottom: 50px;
 
-  &-main-title {
+  &-main-title{
     color: #fff;
     font-family: "comfortaa", sans-serif;
   }
@@ -731,6 +730,7 @@ nav {
 /* start index.html page */
 
 
+
 /* start product page*/
 
 
@@ -765,7 +765,7 @@ nav {
 }
 .product-page{
 
-
+  padding-bottom: 60px;
 
   &-txt{
     font-size: 15px;
