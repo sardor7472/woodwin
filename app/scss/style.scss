@@ -760,58 +760,53 @@ nav {
 
   &-main {
     padding: 60px 0;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0,0,0, .8);
   }
 }
+.product-page{
 
-.product-page {
 
-  padding-bottom: 60px;
 
   &-txt{
     font-size: 15px;
     font-weight: 300;
     color: #fff;
     margin-top: 40px;
-
-    span {
+    span{
       display: inline-block;
       font-weight: 500;
       text-transform: uppercase;
     }
   }
-
-  &-img {
-    @include fixImg(100%, 300px, true);
+  &-img{
+    @include fixImg(100%,300px, true);
   }
 
-  &-text {
+  &-text{
     color: #fff;
     font-weight: 300;
     font-size: 15px;
   }
+  &-list{
 
-  &-list {
-
-    li {
-      a {
+    li{
+      a{
         display: inline-block;
         border: 2px solid $link-col;
         padding: 15px 40px;
         text-align: center;
-        color: $link-col;
         &:hover{
             background: $link-col;
             color: #000;
         }
       }
     }
-
-    li + li {
+    li+li{
       margin-top: 22px;
     }
   }
 }
+
 
 
 /* end product page*/
@@ -823,15 +818,12 @@ nav {
   text-align: center;
   padding: 15px 0 22px;
 }
-
 .gallery-slider .owl-dots .active span {
   background: #d7b46d;
 }
-
 .gallery-slider, .owl-carousel .owl-dots {
   display: block !important;
 }
-
 .gallery-slider .owl-dot span {
   display: block;
   width: 15px;
@@ -841,7 +833,7 @@ nav {
 }
 
 .gallery{
-  padding: 60px 0;
+
 
 
 
@@ -849,29 +841,19 @@ nav {
 
   &-slider-card{
     position: relative;
-    cursor: pointer;
+    margin: 5px;
     &:hover{
-      .gallery-slider-img::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 96%;
-        height: 96%;
-        background: rgba(0,0,0,.4);
-        border: 5px solid $link-col;
-      }
-      .gallery-slider-desc{
-        display: block;
-      }
+
     }
   }
-
-  &-slider-img {
+  &-slider-img{
     @include fixImg(100%, 215px, true);
   }
   &-slider-desc{
-    width: 80%;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 5px solid $link-col;
+    background: rgba(0,0,0,.4);
     font-size: 16px;
     font-weight: 700;
     color: #fff;
@@ -891,4 +873,126 @@ nav {
 
 
 /* end gallery page*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* +++++++
+ |  product page  |
++++++++
+ */
+
+.main-padding {
+  padding: 6vh 0;
+}
+
+.product-page-main {
+  &-inf {
+    background: url('../images/bg-banner.png') no-repeat center center /cover;
+    @extend .main-padding;
+    &-img {
+      @extend .pos-r;
+
+      img {
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        @extend .pos-r;
+      }
+
+      &::before {
+        content: '';
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 30px;
+        left: 35px;
+        border: 2px solid #fff;
+        @extend .pos-a;
+      }
+    }
+  }
+}
+
+.product-factory-process {
+  &-head {
+    background: #d7b46d;
+    padding: 20px 0;
+
+    &-title {
+      font-size: 28px;
+    }
+  }
+
+  &-item {
+    @extend .d-f, .ov-h;
+
+    &-wrap {
+      .product-factory-process-item {
+        &:nth-child(odd) {
+          .product-factory-process-item-content {
+            padding-left: 60px;
+            right: -20px;
+            margin-left: -60px;
+            z-index: 2;
+
+            &-inner {
+              padding-right: 35px;
+
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+
+          .product-factory-process-item-img {
+            z-index: 1;
+          }
+
+          .product-factory-process-item-content {
+            padding-right: 60px;
+            right: -20px;
+            margin-left: -20px;
+
+            &-inner {
+              margin-left: auto;
+              padding-left: 35px;
+            }
+          }
+        }
+      }
+    }
+
+    &-img, &-content {
+      flex: 1 1 50%;
+    }
+
+    &-img {
+      @include fixImg(100%, calc(50vh - 50px));
+    }
+
+    &-content {
+      padding: 55px 0;
+      background-image: url('../images/bg-banner.png');
+      max-height: calc(50vh - 50px);
+      overflow: auto;
+
+      @extend .pos-r;
+
+      &-inner {
+        max-width: 500px;
+      }
+    }
+  }
+  //product page
+}
 
