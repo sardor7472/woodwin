@@ -53,15 +53,14 @@ nav {
 
 .nav-list {
 
-  &-language {
+  &-language{
     padding-right: 3px;
   }
 
-  &-lang {
+  &-lang{
     padding-left: 5px;
     position: relative;
-
-    &::before {
+    &::before{
       content: '';
       position: absolute;
       transform: rotate(20deg);
@@ -124,8 +123,10 @@ nav {
       text-transform: uppercase;
       font-weight: 500;
       color: #fff;
+      &:hover{
+        color: $link-col;
+      }
     }
-
     .active {
       color: $link-col;
     }
@@ -139,96 +140,104 @@ nav {
 }
 
 
+
 /* blog main*/
 
-.blog-main {
+.blog-main{
   padding: 60px 0;
 
 
-  &-title {
+
+  &-title{
     color: #fff;
   }
 }
 
-.blog-main-card {
+.blog-main-card{
   margin-top: 60px;
 
 
-  &-link {
+  &-link{
     color: $link-col;
     font-size: 15px;
     font-weight: 700;
     margin-top: 24px;
     display: block;
   }
-
-  &-title {
+  &-title{
     font-size: 20px;
     font-weight: 700;
     color: #fff;
     margin-top: 38px;
   }
-
-  &-text {
+  &-text{
     font-size: 15px;
     font-weight: 700;
     color: #fff;
     margin-top: 24px;
   }
 
-  &-time {
+  &-time{
     color: $link-col;
     font-size: 15px;
     font-weight: 500;
   }
-
-  img {
+  img{
     @include fixImg(225px, 100%, true);;
   }
 }
 
 
+
+
+
+
 /* end blog main*/
+
+
+
+
+
+
+
 
 
 /* Customer reviews main*/
 
-.reviews-main {
+.reviews-main{
   padding: 60px 0;
 
 
-  &-element {
+  &-element{
     margin-top: 60px;
   }
-
-  &-client {
+  &-client{
     margin-top: 25px;
     color: $link-col;
   }
-
-  &-img {
+  &-img{
     position: absolute;
     top: 25px;
     left: 13px;
   }
 
-  &-text {
+  &-text{
     font-size: 14px;
     font-weight: 500;
   }
 
-  &-card {
+  &-card{
     padding: 28px 28px 36px 72px;
     border: 2px solid $link-col;
     position: relative;
     transition: .6s;
-
-    &:hover {
+    &:hover{
       background: #000;
       border: 2px solid #000;
       color: #fff;
     }
   }
+
 
 
 }
@@ -259,8 +268,8 @@ nav {
     margin-left: 14px;
   }
 
-  .owl-dot {
-    span {
+  .owl-dot{
+    span{
       display: block;
       width: 15px;
       height: 15px;
@@ -338,7 +347,9 @@ nav {
 }
 
 
+
 /* end project-main */
+
 
 
 /* main preimushchestva */
@@ -428,14 +439,13 @@ nav {
     color: #000;
     text-transform: uppercase;
     border: 2px solid #000;
-    margin-top: 80px;
     display: inline-block;
   }
 
   &-text {
     font-weight: 300;
     font-size: 15px;
-    height: 400px;
+    height: 322px;
     overflow: hidden;
   }
 
@@ -722,6 +732,12 @@ nav {
 
 
 /* start product page*/
+
+
+.main-product-table{
+  margin-top: 25px;
+}
+
 .brandCramp {
   margin-top: 26px;
   display: flex;
@@ -750,8 +766,9 @@ nav {
 
 .product-page {
 
+  padding-bottom: 60px;
 
-  &-txt {
+  &-txt{
     font-size: 15px;
     font-weight: 300;
     color: #fff;
@@ -782,10 +799,10 @@ nav {
         border: 2px solid $link-col;
         padding: 15px 40px;
         text-align: center;
-
-        &:hover {
-          background: $link-col;
-          color: #000;
+        color: $link-col;
+        &:hover{
+            background: $link-col;
+            color: #000;
         }
       }
     }
@@ -823,27 +840,38 @@ nav {
   background: #303030;
 }
 
-.gallery {
+.gallery{
+  padding: 60px 0;
 
 
-  &-slider-card {
+
+
+
+  &-slider-card{
     position: relative;
-    margin: 5px;
-
-    &:hover {
-
+    cursor: pointer;
+    &:hover{
+      .gallery-slider-img::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 96%;
+        height: 96%;
+        background: rgba(0,0,0,.4);
+        border: 5px solid $link-col;
+      }
+      .gallery-slider-desc{
+        display: block;
+      }
     }
   }
 
   &-slider-img {
     @include fixImg(100%, 215px, true);
   }
-
-  &-slider-desc {
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
-    border: 5px solid $link-col;
-    background: rgba(0, 0, 0, .4);
+  &-slider-desc{
+    width: 80%;
     font-size: 16px;
     font-weight: 700;
     color: #fff;
@@ -857,118 +885,10 @@ nav {
   }
 
 
-  /* end gallery page*/
+
 }
 
-/* +++++++
- |  product page  |
-+++++++
- */
 
-.main-padding {
-  padding: 6vh 0;
-}
 
-.product-page-main {
-  &-inf {
-    background: url('../images/bg-banner.png') no-repeat center center /cover;
-    @extend .main-padding;
-    &-img {
-      @extend .pos-r;
-
-      img {
-        z-index: 1;
-        width: 100%;
-        height: auto;
-        @extend .pos-r;
-      }
-
-      &::before {
-        content: '';
-        display: none;
-        width: 100%;
-        height: 100%;
-        top: 30px;
-        left: 35px;
-        border: 2px solid #fff;
-        @extend .pos-a;
-      }
-    }
-  }
-}
-
-.product-factory-process {
-  &-head {
-    background: #d7b46d;
-    padding: 20px 0;
-
-    &-title {
-      font-size: 28px;
-    }
-  }
-
-  &-item {
-    @extend .d-f, .ov-h;
-
-    &-wrap {
-      .product-factory-process-item {
-        &:nth-child(odd) {
-          .product-factory-process-item-content {
-            padding-left: 60px;
-            right: -20px;
-            margin-left: -60px;
-            z-index: 2;
-
-            &-inner {
-              padding-right: 35px;
-
-            }
-          }
-        }
-
-        &:nth-child(even) {
-          flex-direction: row-reverse;
-
-          .product-factory-process-item-img {
-            z-index: 1;
-          }
-
-          .product-factory-process-item-content {
-            padding-right: 60px;
-            right: -20px;
-            margin-left: -20px;
-
-            &-inner {
-              margin-left: auto;
-              padding-left: 35px;
-            }
-          }
-        }
-      }
-    }
-
-    &-img, &-content {
-      flex: 1 1 50%;
-    }
-
-    &-img {
-      @include fixImg(100%, calc(50vh - 50px));
-    }
-
-    &-content {
-      padding: 55px 0;
-      background-image: url('../images/bg-banner.png');
-      max-height: calc(50vh - 50px);
-      overflow: auto;
-
-      @extend .pos-r;
-
-      &-inner {
-        max-width: 500px;
-      }
-    }
-  }
-}
-
-//product page
+/* end gallery page*/
 
