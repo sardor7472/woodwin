@@ -14,7 +14,7 @@
 
 .un-title {
   text-transform: uppercase;
-  font-family: comfortaa;
+  font-family: $fontHeading, sans-serif;
   position: relative;
   padding-bottom: 16px;
   text-align: center;
@@ -311,6 +311,3 @@ nav {
 /* end footer style */
 
 /* start index.html page */
-
-
-@import "media";

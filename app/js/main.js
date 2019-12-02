@@ -2,9 +2,9 @@ $(document).ready(function() {
 
     $('.slider').owlCarousel({
         items: 1,
-        nav: true,
+        nav: false,
         loop: true,
-        navText: ''
+        // navText: ''
     });
 
 

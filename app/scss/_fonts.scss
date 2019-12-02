@@ -5,32 +5,31 @@
     src: url($path);
   }
 }
-$fontBase: 'comfortaa';
-$fontBasePath: '../fonts/';
-$fontHeading: 'comfortaa';
+
+$fontHeading: 'Comfortaa';
+$fontHeadPath: '../fonts/comfortaa/';
 
 //++++++++++++++++++++++++++++++++++ | regular | ++++++++++++++++++++++++++++++++++
-@include importFont($fontBase, 300, $fontBasePath + 'Comfortaa-Regular.ttf')
+@include importFont($fontHeading, 400, $fontHeadPath + 'Comfortaa-Regular.ttf')
 
 //++++++++++++++++++++++++++++++++++ | medium | ++++++++++++++++++++++++++++++++++
-@include importFont($fontBase, 500, $fontBasePath + 'Comfortaa-Medium.ttf')
+@include importFont($fontHeading, 500, $fontHeadPath + 'Comfortaa-Medium.ttf')
 
-//header font
-//++++++++++++++++++++++++++++++++++ |  semebold | ++++++++++++++++++++++++++++++++++
-@include importFont($fontHeading, 700, $fontBasePath + 'Comfortaa-SemiBold.ttf');
-//header font
+//heading font
+//++++++++++++++++++++++++++++++++++ |  semi-bold | ++++++++++++++++++++++++++++++++++
+@include importFont($fontHeading, 700, $fontHeadPath + 'Comfortaa-SemiBold.ttf');
+//heading font
 //
 
-//header font
+//heading font
 //++++++++++++++++++++++++++++++++++ |  bold | ++++++++++++++++++++++++++++++++++
-@include importFont($fontHeading, 900, $fontBasePath + 'Comfortaa-Bold.ttf');
-//header font
+@include importFont($fontHeading, 900, $fontHeadPath + 'Comfortaa-Bold.ttf');
+//heading font
 //
 
 
-$fontBase: 'comfortaa';
-$fontBasePath: '../fonts/';
-$fontHeading: 'museoSans';
+$fontBase: 'MuseoSans';
+$fontBasePath: '../fonts/museoSans/';
 
 //++++++++++++++++++++++++++++++++++ | regular | ++++++++++++++++++++++++++++++++++
 @include importFont($fontBase, 300, $fontBasePath + 'MuseSansCyrlRegular.otf')
