@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     $('.slider').owlCarousel({
         items: 1,
@@ -8,15 +8,14 @@ $(document).ready(function() {
 
     $('.project-main-slider').owlCarousel({
         items: 1,
-        nav:false,
+        nav: false,
         dots: true,
     })
 
 
-
     $('.gallery-slider').owlCarousel({
         items: 1,
-        nav:false,
+        nav: false,
         dots: true,
     })
 
