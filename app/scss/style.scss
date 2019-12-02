@@ -113,6 +113,9 @@ nav {
       text-transform: uppercase;
       font-weight: 500;
       color: #fff;
+      &:hover{
+        color: $link-col;
+      }
     }
     .active {
       color: $link-col;
@@ -415,13 +418,12 @@ nav {
     color: #000;
     text-transform: uppercase;
     border: 2px solid #000;
-    margin-top: 80px;
     display: inline-block;
   }
   &-text{
     font-weight: 300;
     font-size: 15px;
-    height: 400px;
+    height: 322px;
     overflow: hidden;
   }
   &-title{
@@ -686,6 +688,12 @@ nav {
 
 
 /* start product page*/
+
+
+.main-product-table{
+  margin-top: 25px;
+}
+
 .brandCramp{
   margin-top: 26px;
   display: flex;
@@ -710,7 +718,7 @@ nav {
 }
 .product-page{
 
-
+  padding-bottom: 60px;
 
   &-txt{
     font-size: 15px;
@@ -740,6 +748,7 @@ nav {
         border: 2px solid $link-col;
         padding: 15px 40px;
         text-align: center;
+        color: $link-col;
         &:hover{
             background: $link-col;
             color: #000;
@@ -778,7 +787,7 @@ nav {
 }
 
 .gallery{
-
+  padding: 60px 0;
 
 
 
@@ -786,28 +795,36 @@ nav {
 
   &-slider-card{
     position: relative;
-    margin: 5px;
+    cursor: pointer;
     &:hover{
-
+      .gallery-slider-img::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 96%;
+        height: 96%;
+        background: rgba(0,0,0,.4);
+        border: 5px solid $link-col;
+      }
+      .gallery-slider-desc{
+        display: block;
+      }
     }
   }
   &-slider-img{
     @include fixImg(100%, 215px, true);
   }
   &-slider-desc{
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
-    border: 5px solid $link-col;
-    background: rgba(0,0,0,.4);
+    width: 80%;
     font-size: 16px;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-    //display: none;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    text-align: center;
     transform: translate(-50%, -50%);
   }
 

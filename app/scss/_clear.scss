@@ -68,13 +68,11 @@ time {
   @extend .f-semi;
 }
 
-
 a {
-  color: $link-col;
   text-decoration: none;
   @extend .transition;
   &.base-col {
-    color: $base-col;
+    color: #fff;
     &:hover {
       color: $link-col;
     }
@@ -277,5 +275,28 @@ h6, .h6 {
     padding: initial;
     margin-bottom: .5rem;
   }
+
+
+  table,td{
+    border: 2px solid #f7f7f7;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  table{
+    width: 100%;
+  }
+table tr:nth-child(1){
+  text-transform: uppercase;
+}
+table tr td+td{
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
 }
 
