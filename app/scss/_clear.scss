@@ -8,7 +8,6 @@ hr {
 }
 
 
-
 .file-input-label {
   overflow: hidden;
   @extend .pos-r, .cur-p;
@@ -71,23 +70,29 @@ time {
 a {
   text-decoration: none;
   @extend .transition;
+
   &.base-col {
     color: #fff;
+
     &:hover {
       color: $link-col;
     }
   }
+
   &.wh-col {
     &:hover {
       color: $link-col;
     }
   }
+
   &.blue-col {
     svg path {
       fill: #086ab0
     }
+
     &:hover {
       color: $link-col;
+
       svg path {
         fill: $link-col;
       }
@@ -136,6 +141,7 @@ button {
 //+-+-+-+-+-+-+-+-+-+- | table | +-+-+-+-+-+-+-+-+-+-
 .table {
   overflow: auto;
+
   &-tr {
     display: flex;
     align-items: stretch;
@@ -175,9 +181,9 @@ button {
       border-left: 1px solid #e6ebf0;
     }
   }
+
   //end table
 }
-
 
 
 //+-+-+-+-+-+-+-+-+-+- | fonts | +-+-+-+-+-+-+-+-+-+-
@@ -277,25 +283,23 @@ h6, .h6 {
   }
 
 
-  table,td{
+  table, td {
     border: 2px solid #f7f7f7;
     border-collapse: collapse;
     text-align: center;
   }
-  table{
+
+  table {
     width: 100%;
   }
-table tr:nth-child(1){
-  text-transform: uppercase;
-}
-table tr td+td{
-  text-transform: uppercase;
-}
 
+  table tr:nth-child(1) {
+    text-transform: uppercase;
+  }
 
-
-
-
+  table tr td + td {
+    text-transform: uppercase;
+  }
 
 
 }
