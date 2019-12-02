@@ -17,13 +17,13 @@ $fontHeadPath: '../fonts/comfortaa/';
 
 //heading font
 //++++++++++++++++++++++++++++++++++ |  semi-bold | ++++++++++++++++++++++++++++++++++
-@include importFont($fontHeading, 700, $fontHeadPath + 'Comfortaa-SemiBold.ttf');
+@include importFont($fontHeading, 600, $fontHeadPath + 'Comfortaa-SemiBold.ttf');
 //heading font
 //
 
 //heading font
 //++++++++++++++++++++++++++++++++++ |  bold | ++++++++++++++++++++++++++++++++++
-@include importFont($fontHeading, 900, $fontHeadPath + 'Comfortaa-Bold.ttf');
+@include importFont($fontHeading, 700, $fontHeadPath + 'Comfortaa-Bold.ttf');
 //heading font
 //
 
@@ -31,20 +31,21 @@ $fontHeadPath: '../fonts/comfortaa/';
 $fontBase: 'MuseoSans';
 $fontBasePath: '../fonts/museoSans/';
 
+@include importFont($fontBase, 300, $fontBasePath + 'MuseoSansCyrl.otf')
 //++++++++++++++++++++++++++++++++++ | regular | ++++++++++++++++++++++++++++++++++
-@include importFont($fontBase, 300, $fontBasePath + 'MuseSansCyrlRegular.otf')
+@include importFont($fontBase, 400, $fontBasePath + 'MuseSansCyrlRegular.otf')
 
-//++++++++++++++++++++++++++++++++++ | medume | ++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++ | medium | ++++++++++++++++++++++++++++++++++
 @include importFont($fontBase, 500, $fontBasePath + 'MuseSansCyrlMedium.otf')
 
 //header font
-//++++++++++++++++++++++++++++++++++ |  semebold | ++++++++++++++++++++++++++++++++++
-@include importFont($fontHeading, 700, $fontBasePath + 'MuseSansCyrlSsemeBold.otf');
+//++++++++++++++++++++++++++++++++++ |  semi-bold | ++++++++++++++++++++++++++++++++++
+@include importFont($fontHeading, 600, $fontBasePath + 'MuseSansCyrlSsemeBold.otf');
 //header font
 //
 
 //header font
 //++++++++++++++++++++++++++++++++++ |  bold | ++++++++++++++++++++++++++++++++++
-@include importFont($fontHeading, 900, $fontBasePath + 'MuseSansCyrlBold.otf');
+@include importFont($fontHeading, 700, $fontBasePath + 'MuseSansCyrlBold.otf');
 //header font
 //

@@ -18,6 +18,7 @@
   position: relative;
   padding-bottom: 16px;
   text-align: center;
+
   &::before {
     content: '';
     position: absolute;
@@ -40,18 +41,27 @@
 
 nav {
   background: #000;
+
+  .row.equal-offsets {
+    margin-bottom: 0;
+
+    [class*=col-] {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .nav-list {
 
-  &-language{
+  &-language {
     padding-right: 3px;
   }
 
-  &-lang{
+  &-lang {
     padding-left: 5px;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       transform: rotate(20deg);
@@ -62,6 +72,7 @@ nav {
       background: #fff;
     }
   }
+
   &-inner {
     display: none;
     position: absolute;
@@ -114,6 +125,7 @@ nav {
       font-weight: 500;
       color: #fff;
     }
+
     .active {
       color: $link-col;
     }
@@ -127,104 +139,96 @@ nav {
 }
 
 
-
 /* blog main*/
 
-.blog-main{
+.blog-main {
   padding: 60px 0;
 
 
-
-  &-title{
+  &-title {
     color: #fff;
   }
 }
 
-.blog-main-card{
+.blog-main-card {
   margin-top: 60px;
 
 
-  &-link{
+  &-link {
     color: $link-col;
     font-size: 15px;
     font-weight: 700;
     margin-top: 24px;
     display: block;
   }
-  &-title{
+
+  &-title {
     font-size: 20px;
     font-weight: 700;
     color: #fff;
     margin-top: 38px;
   }
-  &-text{
+
+  &-text {
     font-size: 15px;
     font-weight: 700;
     color: #fff;
     margin-top: 24px;
   }
 
-  &-time{
+  &-time {
     color: $link-col;
     font-size: 15px;
     font-weight: 500;
   }
-  img{
+
+  img {
     @include fixImg(225px, 100%, true);;
   }
 }
 
 
-
-
-
-
 /* end blog main*/
-
-
-
-
-
-
-
 
 
 /* Customer reviews main*/
 
-.reviews-main{
+.reviews-main {
   padding: 60px 0;
 
 
-  &-element{
+  &-element {
     margin-top: 60px;
   }
-  &-client{
+
+  &-client {
     margin-top: 25px;
     color: $link-col;
   }
-  &-img{
+
+  &-img {
     position: absolute;
     top: 25px;
     left: 13px;
   }
 
-  &-text{
+  &-text {
     font-size: 14px;
     font-weight: 500;
   }
 
-  &-card{
+  &-card {
     padding: 28px 28px 36px 72px;
     border: 2px solid $link-col;
     position: relative;
     transition: .6s;
-    &:hover{
+
+    &:hover {
       background: #000;
       border: 2px solid #000;
       color: #fff;
     }
   }
-
 
 
 }
@@ -234,26 +238,29 @@ nav {
 
 /* project-main */
 
-.project-main-slider,.owl-carousel .owl-dots{
-  display: block!important;
+.project-main-slider, .owl-carousel .owl-dots {
+  display: block !important;
 }
-.project-main-slider{
 
-  .owl-dots{
+.project-main-slider {
+
+  .owl-dots {
     text-align: center;
     padding: 15px 0 22px;
-    .active{
-      span{
+
+    .active {
+      span {
         background: $link-col;
       }
     }
   }
-  .owl-dot+.owl-dot{
+
+  .owl-dot + .owl-dot {
     margin-left: 14px;
   }
 
-  .owl-dot{
-    span{
+  .owl-dot {
+    span {
       display: block;
       width: 15px;
       height: 15px;
@@ -263,22 +270,25 @@ nav {
   }
 }
 
-.project-main-element{
+.project-main-element {
 
 
-  &-card{
+  &-card {
     margin: 7px;
-    &:hover{
-      .project-main-element-desc{
+
+    &:hover {
+      .project-main-element-desc {
         display: block;
       }
     }
   }
-  &-desc{
+
+  &-desc {
     cursor: pointer;
     display: none;
     transition: 1s;
-    h2{
+
+    h2 {
       color: #000;
       padding: 25px 30px;
       font-size: 20px;
@@ -293,28 +303,31 @@ nav {
     left: 0;
     width: 100%;
   }
-  &-img{
-    @include fixImg(375px,300px, true);
+
+  &-img {
+    @include fixImg(375px, 300px, true);
   }
 }
 
-.project-main{
+.project-main {
 
-  .active{
+  .active {
     background: #151515;
     color: $link-col;
   }
 
-  &-list{
+  &-list {
     display: flex;
     justify-content: center;
+
     &-wrap {
       background: $link-col;
       padding: 30px 0;
     }
-    a{
+
+    a {
       display: block;
-      color:#000;
+      color: #000;
       padding: 15px 30px;
       font-size: 15px;
       font-weight: 500;
@@ -325,26 +338,25 @@ nav {
 }
 
 
-
 /* end project-main */
-
 
 
 /* main preimushchestva */
 
-.preimushchestva{
+.preimushchestva {
 
   padding-top: 60px;
   padding-bottom: 50px;
 
-  &-main-title{
+  &-main-title {
     color: #fff;
     font-family: "comfortaa", sans-serif;
   }
 
-  &-text{
+  &-text {
     margin-top: 50px;
-    p{
+
+    p {
       text-align: center;
       font-weight: 500;
       font-size: 18px;
@@ -353,7 +365,7 @@ nav {
     }
   }
 
-  &-element{
+  &-element {
     @include fixImg(130px, 130px, true);
   }
 
@@ -365,11 +377,11 @@ nav {
 
 /* main about */
 
-.main-call{
+.main-call {
   padding: 30px 0;
   background: $link-col;
 
-  &-link{
+  &-link {
     text-align: center;
     display: block;
     padding: 15px 10px;
@@ -378,30 +390,29 @@ nav {
     text-transform: uppercase;
     border: 2px solid #000;
   }
-  &-text{
+
+  &-text {
     font-size: 22px;
     font-weight: 500;
   }
 
 
-
 }
 
 
-
-
-.main-about{
+.main-about {
   padding: 58px 0;
 
 
-
-  &-img{
-    img{
+  &-img {
+    img {
       position: relative;
       z-index: 1;
     }
+
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       top: 40px;
@@ -411,7 +422,8 @@ nav {
       border: 2px solid #000;
     }
   }
-  &-link{
+
+  &-link {
     padding: 15px 20px;
     color: #000;
     text-transform: uppercase;
@@ -419,13 +431,15 @@ nav {
     margin-top: 80px;
     display: inline-block;
   }
-  &-text{
+
+  &-text {
     font-weight: 300;
     font-size: 15px;
     height: 400px;
     overflow: hidden;
   }
-  &-title{
+
+  &-title {
     font-family: "comfortaa", sans-serif;
     margin-bottom: 50px;
   }
@@ -437,10 +451,10 @@ nav {
 
 
 /* main-product */
-.main-product{
+.main-product {
   padding: 55px 0;
 
-  &-card-action{
+  &-card-action {
     background: #fff;
     padding: 15px 20px;
     color: #000;
@@ -448,23 +462,27 @@ nav {
   }
 
 
-  &-title{
+  &-title {
     margin-bottom: 55px;
     color: #fff;
   }
 }
-.main-product-card{
+
+.main-product-card {
   cursor: pointer;
   overflow: hidden;
   @extend .pos-r;
+
   &:hover {
     .main-product-card-content {
       top: 0;
     }
   }
-  &-img{
+
+  &-img {
     @include fixImg(100%, 380px, true);
   }
+
   &-description {
     padding: 20px 15px;
     font-size: 15px;
@@ -472,12 +490,13 @@ nav {
     overflow: hidden;
   }
 
-  &-content{
-    background: rgba(0,0,0,.8);
+  &-content {
+    background: rgba(0, 0, 0, .8);
     top: calc(100% - 75px);
     width: 100%;
     height: 100%;
     @extend .pos-a, .transition;
+
     &-head {
       position: relative;
       background: #fff;
@@ -487,7 +506,8 @@ nav {
       height: 75px;
       overflow: hidden;
       text-align: center;
-      &::before{
+
+      &::before {
         content: '';
         position: absolute;
         bottom: 0;
@@ -500,25 +520,26 @@ nav {
     }
   }
 }
+
 /* end main-product */
 
 
-
 /* slider style */
-.slider{
-  display: block!important;
+.slider {
+  display: block !important;
   position: relative;
 
 
-  &-content{
-    background: rgba(0,0,0,.6);
+  &-content {
+    background: rgba(0, 0, 0, .6);
     width: 550px;
     padding: 50px 36px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 50%;
-    a{
+
+    a {
       display: inline-block;
       padding: 15px 20px;
       background: $link-col;
@@ -528,7 +549,8 @@ nav {
       margin-top: 25px;
       text-transform: uppercase;
     }
-    P{
+
+    P {
       font-size: 32px;
       font-family: "comfortaa", sans-serif;
       font-weight: 600;
@@ -537,18 +559,20 @@ nav {
   }
 
 
-  .owl-carousel,.owl-dots{
-    display: block!important;
+  .owl-carousel, .owl-dots {
+    display: block !important;
     position: absolute;
     bottom: 33px;
     left: 50%;
     transform: translateX(-50%);
   }
-  .owl-dot+.owl-dot{
+
+  .owl-dot + .owl-dot {
     margin-left: 15px;
   }
-  .owl-dot{
-    span{
+
+  .owl-dot {
+    span {
       display: inline-block;
       width: 15px;
       height: 15px;
@@ -557,69 +581,77 @@ nav {
     }
 
   }
-  .owl-dot.active{
-    span{
+
+  .owl-dot.active {
+    span {
       background: $link-col;
     }
   }
-  &-element{
+
+  &-element {
     height: 670px;
     width: 100%;
     position: relative;
   }
 }
+
 /* end slider style */
 
 /* footer style */
-.partnior{
+.partnior {
   padding: 75px 0;
 
-  &-img{
+  &-img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
   }
-  &-images{
+
+  &-images {
     padding: 15px;
     @include fixImg(180px, 70px, true);
   }
 }
 
-.footer-contact{
+.footer-contact {
   padding: 60px 0;
   background: #151515;
 
-  &-phone{
+  &-phone {
     font-size: 13px;
     font-weight: 500;
     color: #fff;
     margin-top: 16px;
-    li+li{
+
+    li + li {
       margin-top: 16px;
     }
 
   }
-  &-element{
+
+  &-element {
     font-size: 13px;
     font-weight: 500;
     color: #fff;
     margin-top: 16px;
     line-height: 2;
   }
-  &-title{
+
+  &-title {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     color: $link-col;
   }
 
-  &-nav{
-    li+li{
+  &-nav {
+    li + li {
       margin-top: 17px;
     }
-    a{
-      &:hover{
+
+    a {
+      &:hover {
         color: #fff;
       }
 
@@ -637,21 +669,23 @@ nav {
   padding-top: 32px;
 
 
-
   &-satsial {
     display: flex;
     justify-content: space-between;
-    svg{
+
+    svg {
       position: relative;
     }
-    a{
+
+    a {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 26px;
       height: 26px;
-      &::before{
+
+      &::before {
         content: '';
         position: absolute;
         top: 0;
@@ -663,6 +697,7 @@ nav {
       }
     }
   }
+
   &-center-text {
     font-size: 13px;
     font-weight: 500;
@@ -680,79 +715,86 @@ nav {
     }
   }
 }
+
 /* end footer style */
 
 /* start index.html page */
 
 
-
 /* start product page*/
-.brandCramp{
+.brandCramp {
   margin-top: 26px;
   display: flex;
   justify-content: center;
-  li+li{
+
+  li + li {
     margin-left: 5px;
     color: #fff;
   }
-  a{
+
+  a {
     font-size: 15px;
     font-weight: 500;
     color: #fff;
   }
 
 }
-.product-banner{
 
-  &-main{
+.product-banner {
+
+  &-main {
     padding: 60px 0;
-    background: rgba(0,0,0, .8);
+    background: rgba(0, 0, 0, .8);
   }
 }
-.product-page{
+
+.product-page {
 
 
-
-  &-txt{
+  &-txt {
     font-size: 15px;
     font-weight: 300;
     color: #fff;
     margin-top: 40px;
-    span{
+
+    span {
       display: inline-block;
       font-weight: 500;
       text-transform: uppercase;
     }
   }
-  &-img{
-    @include fixImg(100%,300px, true);
+
+  &-img {
+    @include fixImg(100%, 300px, true);
   }
 
-  &-text{
+  &-text {
     color: #fff;
     font-weight: 300;
     font-size: 15px;
   }
-  &-list{
 
-    li{
-      a{
+  &-list {
+
+    li {
+      a {
         display: inline-block;
         border: 2px solid $link-col;
         padding: 15px 40px;
         text-align: center;
-        &:hover{
-            background: $link-col;
-            color: #000;
+
+        &:hover {
+          background: $link-col;
+          color: #000;
         }
       }
     }
-    li+li{
+
+    li + li {
       margin-top: 22px;
     }
   }
 }
-
 
 
 /* end product page*/
@@ -764,12 +806,15 @@ nav {
   text-align: center;
   padding: 15px 0 22px;
 }
+
 .gallery-slider .owl-dots .active span {
   background: #d7b46d;
 }
+
 .gallery-slider, .owl-carousel .owl-dots {
   display: block !important;
 }
+
 .gallery-slider .owl-dot span {
   display: block;
   width: 15px;
@@ -778,28 +823,27 @@ nav {
   background: #303030;
 }
 
-.gallery{
+.gallery {
 
 
-
-
-
-
-  &-slider-card{
+  &-slider-card {
     position: relative;
     margin: 5px;
-    &:hover{
+
+    &:hover {
 
     }
   }
-  &-slider-img{
+
+  &-slider-img {
     @include fixImg(100%, 215px, true);
   }
-  &-slider-desc{
+
+  &-slider-desc {
     width: calc(100% - 4px);
     height: calc(100% - 4px);
     border: 5px solid $link-col;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, .4);
     font-size: 16px;
     font-weight: 700;
     color: #fff;
@@ -813,9 +857,118 @@ nav {
   }
 
 
-
+  /* end gallery page*/
 }
 
+/* +++++++
+ |  product page  |
++++++++
+ */
 
+.main-padding {
+  padding: 6vh 0;
+}
 
-/* end gallery page*/
+.product-page-main {
+  &-inf {
+    background: url('../images/bg-banner.png') no-repeat center center /cover;
+    @extend .main-padding;
+    &-img {
+      @extend .pos-r;
+
+      img {
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        @extend .pos-r;
+      }
+
+      &::before {
+        content: '';
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 30px;
+        left: 35px;
+        border: 2px solid #fff;
+        @extend .pos-a;
+      }
+    }
+  }
+}
+
+.product-factory-process {
+  &-head {
+    background: #d7b46d;
+    padding: 20px 0;
+
+    &-title {
+      font-size: 28px;
+    }
+  }
+
+  &-item {
+    @extend .d-f, .ov-h;
+
+    &-wrap {
+      .product-factory-process-item {
+        &:nth-child(odd) {
+          .product-factory-process-item-content {
+            padding-left: 60px;
+            right: -20px;
+            margin-left: -60px;
+            z-index: 2;
+
+            &-inner {
+              padding-right: 35px;
+
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+
+          .product-factory-process-item-img {
+            z-index: 1;
+          }
+
+          .product-factory-process-item-content {
+            padding-right: 60px;
+            right: -20px;
+            margin-left: -20px;
+
+            &-inner {
+              margin-left: auto;
+              padding-left: 35px;
+            }
+          }
+        }
+      }
+    }
+
+    &-img, &-content {
+      flex: 1 1 50%;
+    }
+
+    &-img {
+      @include fixImg(100%, calc(50vh - 50px));
+    }
+
+    &-content {
+      padding: 55px 0;
+      background-image: url('../images/bg-banner.png');
+      max-height: calc(50vh - 50px);
+      overflow: auto;
+
+      @extend .pos-r;
+
+      &-inner {
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+//product page
+
