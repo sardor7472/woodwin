@@ -1,14 +1,14 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     $('.slider').owlCarousel({
         items: 1,
+        nav: false,
         loop: true,
-        navText: ''
     });
 
     $('.project-main-slider').owlCarousel({
         items: 1,
-        navText: '',
+        nav:false,
         dots: true,
     })
 
@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     $('.gallery-slider').owlCarousel({
         items: 1,
-        navText: '',
+        nav:false,
         dots: true,
     })
 
