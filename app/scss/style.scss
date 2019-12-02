@@ -299,8 +299,6 @@ nav {
 }
 
 .project-main{
-  padding: 30px 0;
-  background: $link-col;
 
   .active{
     background: #151515;
@@ -308,9 +306,12 @@ nav {
   }
 
   &-list{
-
     display: flex;
     justify-content: center;
+    &-wrap {
+      background: $link-col;
+      padding: 30px 0;
+    }
     a{
       display: block;
       color:#000;
