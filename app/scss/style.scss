@@ -22,6 +22,10 @@
   }
 }
 
+.d-none {
+  display: none;
+}
+
 
 .un-title {
   text-transform: uppercase;
@@ -289,7 +293,7 @@ nav {
 
 
   &-card {
-    margin: 7px;
+    margin-top: 15px;
 
     &:hover {
       .project-main-element-desc {
@@ -763,6 +767,10 @@ nav {
 
 .product-banner {
 
+
+  &-title{
+    color: #fff;
+  }
   &-main {
     padding: 60px 0;
     background: rgba(0, 0, 0, .8);
@@ -820,7 +828,6 @@ nav {
 }
 
 
-
 /* end product page*/
 
 /* start gallery page*/
@@ -829,6 +836,9 @@ nav {
 .gallery-slider .owl-dots {
   text-align: center;
   padding: 15px 0 22px;
+}
+.owl-dot + .owl-dot{
+  margin-left: 15px;
 }
 
 .gallery-slider .owl-dots .active span {
@@ -852,32 +862,33 @@ nav {
   padding: 60px 0;
 
 
-
-
-
-  &-slider-card{
+  &-slider-card {
     position: relative;
     cursor: pointer;
-    &:hover{
-      .gallery-slider-img::before{
+    margin-top: 15px;
+    &:hover {
+      .gallery-slider-img::before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 96%;
         height: 96%;
-        background: rgba(0,0,0,.4);
+        background: rgba(0, 0, 0, .4);
         border: 5px solid $link-col;
       }
-      .gallery-slider-desc{
+
+      .gallery-slider-desc {
         display: block;
       }
     }
   }
-  &-slider-img{
+
+  &-slider-img {
     @include fixImg(100%, 215px, true);
   }
-  &-slider-desc{
+
+  &-slider-desc {
     width: 80%;
     font-size: 16px;
     font-weight: 700;
@@ -897,20 +908,19 @@ nav {
 /* end gallery page*/
 
 
-
-
-
-
-
-
-
-
-
-
 /* +++++++
  |  product page  |
 +++++++
  */
+
+
+
+.woodwin-map{
+  iframe{
+    width: 100%;
+    height: 560px;
+  }
+}
 
 .main-padding {
   padding: 6vh 0;
@@ -920,6 +930,7 @@ nav {
   &-inf {
     background: url('../images/bg-banner.png') no-repeat center center /cover;
     @extend .main-padding;
+
     &-img {
       @extend .pos-r;
 
@@ -1015,6 +1026,7 @@ nav {
       }
     }
   }
+
   //product page
 }
 //product page
@@ -1028,4 +1040,187 @@ nav {
   background: url('../images/bg-banner.png') center center /cover;
 }
 //contact page
+
+
+
+
+
+
+
+
+
+.header-nav{
+  //position: relative;
+}
+
+.open{
+  display: block!important;
+}
+
+.hamburger{
+  //position: absolute;
+  //z-index: 4;
+  //right: 20px;
+  //top: 50%;
+  //transform: translateY(-50%);
+  display: none;
+  margin: 0 auto;
+}
+
+
+
+//humburger
+
+/*
+green: #3FAF82
+
+*/
+
+.box {
+  //border-radius: 2px;
+  //////position: absolute;
+  ////top: 50%;
+  ////left: 50%;
+  ////transform: translate(-50%, -50%);
+  //width: 50px;
+  //height: 50px;
+  ////background: #3faf82;
+  //box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+}
+
+.btn {
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+  width: 95px;
+  cursor: pointer;
+
+
+
+  span {
+    display: block;
+    width: 100%;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 3px;
+    height: 5px;
+    background: #fff;
+    transition: all .3s;
+    position: relative;
+  }
+}
+
+
+span + span {
+  margin-top: 10px;
+}
+
+.active span:nth-child(1) {
+  animation: ease .7s top forwards;
+}
+
+.not-active span:nth-child(1) {
+  animation: ease .7s top-2 forwards;
+}
+
+.active span:nth-child(2) {
+  animation: ease .7s scaled forwards;
+}
+
+.not-active span:nth-child(2) {
+  animation: ease .7s scaled-2 forwards;
+}
+
+.active span:nth-child(3) {
+  animation: ease .7s bottom forwards;
+}
+
+.not-active span:nth-child(3) {
+  animation: ease .7s bottom-2 forwards;
+}
+
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 16px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: 22px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 22px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 16px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 22px;
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
 
