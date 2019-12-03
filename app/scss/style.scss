@@ -2,6 +2,17 @@
 @import "bootstrap-scss/bootstrap-grid";
 @import "base";
 
+.text-sm-upper {
+  text-transform: lowercase;
+  &:first-letter{
+    text-transform: uppercase;
+  }
+}
+
+.f-medium {
+  font-weight: 500;
+}
+
 
 .row.equal-offsets {
   margin: -15px;
@@ -370,7 +381,6 @@ nav {
       text-align: center;
       font-weight: 500;
       font-size: 18px;
-      text-transform: uppercase;
       color: #fff;
     }
   }
@@ -1019,6 +1029,17 @@ nav {
 
   //product page
 }
+//product page
+
+
+/* +++++++
+ | contact page |
++++++++
+ */
+.contact-page {
+  background: url('../images/bg-banner.png') center center /cover;
+}
+//contact page
 
 
 
