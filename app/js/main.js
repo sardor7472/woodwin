@@ -7,23 +7,6 @@ $(document).ready(function () {
     });
 
 
-    // $('.gallery-slider').owlCarousel({
-    //     margin: 15,
-    //     nav: false,
-    //     dots: true,
-    //     responsive: {
-    //         0: {
-    //             items: 1
-    //         },
-    //         768: {
-    //             items: 3
-    //         },
-    //         992: {
-    //             items: 4
-    //         }
-    //     }
-    // });
-
     $('.partnior-img').owlCarousel({
         responsive: {
             1199: {

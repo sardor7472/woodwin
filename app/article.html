@@ -6,14 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="libs/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/sweet-modal/jquery.sweet-modal.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/media.min.css">
     <title>Document</title>
 </head>
 <body>
 
-<!--++++++++++++++++ | navigation site | ++++++++++++++++-->
-<nav>
+<nav class="header-nav">
+
+
     <div class="container">
         <div class="row align-items-center equal-offsets">
             <div class="col-xl-4">
@@ -23,8 +25,21 @@
                     </a>
                 </div>
             </div>
+
+            <!--            /* hamburger */-->
+            <div class="hamburger">
+                <div class="box">
+                    <div class="btn not-active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!--            /* hamburger */-->
+
             <div class="col-xl-8">
-                <div class="nav-list">
+                <div class="nav-list" id="list">
                     <ul class="nav-list-element">
                         <li class="nav-list-item "><a class="active" href="">Главная</a></li>
                         <li class="nav-list-item"><a href="">О нас</a></li>
@@ -43,73 +58,89 @@
                         <li class="nav-list-item"><a href="">Блог</a></li>
                         <li class="nav-list-item"><a href="">галерея</a></li>
                         <li class="nav-list-item"><a href="">Контакты</a></li>
-                        <li class="nav-list-item"><a class="nav-list-language">РУ</a><a class="nav-list-lang">EN</a>
+                        <li class="nav-list-item"><a href="" class="nav-list-language">РУ</a><a href=""
+                                                                                                class="nav-list-lang">EN</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-</nav> <!--navigation site-->
+</nav>
 
-<main class="main-padding contact-page">
-    <div class="container">
-        <div class="row equal-offsets">
-            <div class="col-lg-8 wh-col">
-                <div class="d-f mb-3">
-                    <div class="flex-shrink-0">
-                        <img src="images/marker-icon.png" alt="">
-                    </div>
-                    <p class="ml-1 f-medium pt-l">100057 Узбекистан, г. Ташкент, Алмазарский район, ул. Янги Олмазор
-                        51</p>
-                </div>
-                <div class="d-f mb-3">
-                    <div class="flex-shrink-0">
-                        <img class="" src="images/message-icon.png" alt="">
-                    </div>
-                    <p class="ml-1 f-medium pt-l">info@woodwin.uz</p>
-                </div>
-                <div class="d-f">
-                    <div class="flex-shrink-0 mr-1">
-                        <img src="images/phone-icon.png" alt="">
-                    </div>
-                    <div>
-                        <p class="f-medium mb-1">+99893 506-33-33</p>
-                        <p class="f-medium mb-1">+99899 854-61-61</p>
-                        <p class="f-medium mb-1">+99871 248-61-61</p>
-                        <p class="f-medium mb-1">+99893 511-00-77</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <img src="images/large-logo.png" alt="">
-            </div>
-        </div>
+
+<div class="product-banner" style="background: url('images/banner-top.png');">
+    <div class="product-banner-main">
+        <h1 class="un-title product-banner-title">Продукция</h1>
+        <ul class="brandCramp">
+            <li><a href="">Главная</a></li>
+            <li>/</li>
+            <li><a href="">Продукция</a></li>
+        </ul>
     </div>
-</main>
+</div>
 
-<!--++++++++++++++++ | feedback | ++++++++++++++++-->
+
+<div class="article-page" style="background: url('images/bg-banner.png');">
+    <div class="container">
+        <div class="article-page-img">
+            <img src="images/slider-img.png" alt="">
+        </div>
+        <div class="txt-editor">
+
+            <p class="article-page-title">Опалубка для стройки</p>
+            <p class="article-page-time">10 октябрь, 2018</p>
+            <p class="article-page-text">
+                Вспененный лист из ПВХ, также известный как ФОМЕКС, широко используется как в помещениях, так и на
+                открытом
+                воздухе. Он используется в рекламной, строительной и мебельной промышленности. Вспененный лист из ПВХ,
+                также
+                известный как ФОМЕКС, широко используется как в помещениях, так и на открытом воздухе. Он используется в
+                рекламной, строительной и мебельной промышленности. Вспененный лист из ПВХ, также известный как ФОМЕКС,
+                широко используется как в помещениях, так и на открытом воздухе. Он используется в рекламной,
+                строительной и
+                мебельной промышленности.
+            </p>
+            <p class="article-page-text">
+                Вспененный лист из ПВХ, также известный как ФОМЕКС, широко используется как в помещениях, так и на
+                открытом
+                воздухе. Он используется в рекламной, строительной и мебельной промышленности. Вспененный лист из ПВХ,
+                также
+                известный как ФОМЕКС, широко используется как в помещениях, так и на открытом воздухе. Он используется в
+                рекламной, строительной и мебельной промышленности. Вспененный лист из ПВХ, также известный как ФОМЕКС,
+                широко используется как в помещениях, так и на открытом воздухе. Он используется в рекламной,
+                строительной и
+                мебельной промышленности.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
 <div class="main-call">
     <div class="container">
         <div class="row align-items-center equal-offsets">
-            <div class="col-xl-10 col-lg-9 col-md-8">
+            <div class="col-xl-9 col-lg-9 col-md-8">
                 <p class="main-call-text">
                     Ищете лучшие материалы для вашей работы?
                 </p>
             </div>
-            <div class="col-xl-2 col-lg-3 col-md-4">
+            <div class="col-xl-3 col-lg-3 col-md-4">
                 <div class="flex">
-                    <a class="main-about-link bttn" href="">Узнать больше</a>
+                    <a class="main-call-link bttn" >
+                        Звоните сейчас
+                    </a>
                 </div>
+
             </div>
         </div>
 
     </div>
-</div><!--feedback-->
+</div>
 
 
 <div class="woodwin-map">
-
     <iframe class=""
             src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
@@ -117,8 +148,6 @@
 </div>
 
 
-
-<!--++++++++++++++++ | partners | ++++++++++++++++-->
 <div class="partnior">
     <div class="container">
         <div class="partnior-img owl-carousel">
@@ -149,9 +178,7 @@
             </div>
         </div>
     </div>
-</div> <!--partners-->
-
-<!--++++++++++++++++ | footer | ++++++++++++++++-->
+</div>
 <div class="footer-contact">
     <div class="container">
         <div class="row equal-offsets">
@@ -230,15 +257,20 @@
         </div>
     </div>
 
-</div><!--footer-->
+</div>
+
+<button class="modal" type="button">submit</button>
+
+
 
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/OwlCarousel/owl.carousel.min.js"></script>
+<script src="libs/sweet-modal/jquery.sweet-modal.min.js"></script>
 <script>
     // Initialize and add the map
     function initMap() {
         // The location of Uluru
-        var uluru = {lat: -25.344, lng: 131.036};
+        var uluru = {lat: -26.344, lng: 131.036};
         // The map, centered at Uluru
         var map = new google.maps.Map(
             document.getElementById('map'), {zoom: 4, center: uluru});
@@ -249,9 +281,39 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKfWztm3PRZw5oXvmJLZnLxr-Vl7okps&callback=initMap">
 </script>
-
-
-
 <script src="js/main.js"></script>
+
+
+
+
+<script>
+    $('.main-call-link').on('click', function () {
+        $.sweetModal({
+            width: '590px',
+            classes: ['modal-feedback'],
+            content: `<h1 class="un-title">Обратная связь</h1>
+        <form action="">
+                <div class="modal-feedback-form-group">
+
+                    <input type="text" name="firstname" placeholder="Ф.И.О">
+                </div>
+                <div class="modal-feedback-form-group">
+                    <input type="text" name="name" placeholder="Телефон">
+                </div>
+
+                <div class="modal-feedback-form-group">
+
+                    <textarea name="comment" placeholder="Сообщения"></textarea>
+                </div>
+
+                <div class="modal-feedback-batton">
+                    <button class="btn-hexagon" type="submit">absenden </button>
+                </div>
+            </form>
+`,
+
+        });
+    });
+</script>
 </body>
 </html>

@@ -280,15 +280,18 @@
 <div class="main-call">
     <div class="container">
         <div class="row align-items-center equal-offsets">
-            <div class="col-xl-10 col-lg-9 col-md-8">
+            <div class="col-xl-9 col-lg-9 col-md-8">
                 <p class="main-call-text">
                     Ищете лучшие материалы для вашей работы?
                 </p>
             </div>
-            <div class="col-xl-2 col-lg-3 col-md-4">
-                <a class="main-call-link" href="">
-                    Звоните сейчас
-                </a>
+            <div class="col-xl-3 col-lg-3 col-md-4">
+                <div class="flex">
+                    <a class="main-call-link bttn" href="">
+                        Звоните сейчас
+                    </a>
+                </div>
+
             </div>
         </div>
 
@@ -416,6 +419,25 @@
 </div>
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/OwlCarousel/owl.carousel.min.js"></script>
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -26.344, lng: 131.036};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKfWztm3PRZw5oXvmJLZnLxr-Vl7okps&callback=initMap">
+</script>
+
+
+
 <script src="js/main.js"></script>
 </body>
 </html>

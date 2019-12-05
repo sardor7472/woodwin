@@ -132,9 +132,7 @@
   .main-about-title {
     margin-bottom: 20px;
   }
-  .main-about-link {
-    margin-top: 20px;
-  }
+
   .main-about-img img {
     width: 100%;
   }
@@ -190,6 +188,12 @@
 @media screen and (max-width: 575px) {
 
 
+  .article-page-img img{
+    height: 400px;
+  }
+  .main-call-text{
+    text-align: center;
+  }
   .product-factory-process-head-title-plus-icon {
     display: none;
   }
@@ -290,6 +294,13 @@
 //max width 480px
 @media screen and (max-width: 480px) {
 
+
+  .article-page-title{
+    font-size: 20px;
+  }
+  .article-page-img img{
+    height: 300px;
+  }
   .slider-element {
     height: 350px;
   }
